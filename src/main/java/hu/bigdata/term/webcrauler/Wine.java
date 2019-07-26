@@ -18,11 +18,21 @@ public class Wine {
 	private String variety;
 	private String winery;
 	private String appellation;
-	
 	private String datePublished;
 	private String category;
 	private String bottleSize;
 	private String alcohol;
+	
+	@Override
+	public String toString() {
+		String wine = title + "\t" + designation + "\t" + points + "\t" + price + "\t" + appellation + "\t" 
+				+ tasterName + "\t" + tasterTwitterHandle + "\t" + tasterTitle + "\t" + variety  + "\t" 
+				+ variety + "\t" + winery + "\t" + datePublished + "\t" + category + "\t" + bottleSize + "\t"
+				+ alcohol + "\t" + description ;
+
+		return wine;
+	}
+	
 	public long getId() {
 		return id;
 	}
